@@ -4,23 +4,23 @@ export default function Features() {
   const features = [
     {
       icon: "🥖",
-      title: "Fresh Daily",
-      description: "All items baked fresh every morning with premium ingredients",
+      title: "Freshly Baked Daily",
+      description: "Enjoy cakes, pastries, and breads baked fresh every day with quality ingredients.",
     },
     {
-      icon: "🚗",
-      title: "Drive-Through Available",
-      description: "Convenient drive-through ordering for busy customers",
+      icon: "📍",
+      title: "Convenient Location",
+      description: "Located in Liluah, Howrah — easy to visit for takeaway and quick orders.",
     },
     {
-      icon: "👩‍🍳",
-      title: "Women-Owned",
-      description: "Proudly owned and operated by women entrepreneurs",
+      icon: "📦",
+      title: "Takeaway & Delivery",
+      description: "Quick takeaway service with safe no-contact delivery options available.",
     },
     {
-      icon: "📱",
-      title: "No-Contact Delivery",
-      description: "Safe, hygienic delivery options available",
+      icon: "🎂",
+      title: "Custom Cakes",
+      description: "Perfect cakes for birthdays, celebrations, and special occasions.",
     },
   ];
 

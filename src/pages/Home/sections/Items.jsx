@@ -4,34 +4,34 @@ import "./Items.css";
 const featuredItems = [
   {
     id: 1,
-    name: "Premium Chocolate Cake",
-    price: "₹450",
+    name: "Chocolate Truffle Cake",
+    price: "₹400",
     image: "/cake-chocolate.jpg",
-    description: "Rich, moist chocolate cake with ganache frosting",
+    description: "Rich chocolate cake with smooth truffle frosting",
     bestseller: true,
   },
   {
     id: 2,
-    name: "Buttery Croissants",
-    price: "₹150",
+    name: "Fresh Cream Pastry",
+    price: "₹120",
     image: "/pastry-croissant.jpg",
-    description: "Flaky, golden croissants baked fresh daily",
+    description: "Light and fluffy pastry with fresh cream layers",
     bestseller: true,
   },
   {
     id: 3,
-    name: "Artisan Sourdough",
-    price: "₹200",
+    name: "Butter Bread Loaf",
+    price: "₹80",
     image: "/bread-artisan.jpg",
-    description: "Traditional sourdough with perfect crust",
+    description: "Soft and fresh bread loaf baked daily",
     bestseller: false,
   },
   {
     id: 4,
-    name: "Vanilla Pastry",
-    price: "₹100",
-    image: "/pastry-croissant.jpg",
-    description: "Soft vanilla-filled pastries",
+    name: "Birthday Special Cake",
+    price: "₹500",
+    image: "/cake-chocolate.jpg",
+    description: "Perfect custom cake for birthdays and celebrations",
     bestseller: false,
   },
 ];
@@ -42,7 +42,7 @@ export default function Items() {
       <div className="featured-container">
 
         <h2 className="featured-title">
-          Our Best Sellers
+          Popular Items at My Oven Story
         </h2>
 
         <div className="featured-grid">
@@ -72,7 +72,7 @@ export default function Items() {
                   <span className="price">{item.price}</span>
 
                   <a
-                    href="https://www.swiggy.com"
+                    href="https://wa.me/919051011676?text=Hi%20I%20want%20to%20order"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cart-btn"

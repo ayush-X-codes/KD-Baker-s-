@@ -1,176 +1,167 @@
 /* Section */
 .hero {
-    flex: 1;
-    padding: 80px 16px;
+  padding: 80px 16px;
 }
 
 /* Container */
 .hero-container {
-    max-width: 1120px;
-    margin: 0 auto;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 /* Grid */
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 48px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
-    .hero-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .hero-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Text Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Title */
 .hero-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--foreground);
-    margin-bottom: 24px;
-    line-height: 1.2;
-    font-family: "Geist", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 24px;
+  line-height: 1.2;
+  font-family: "Geist", sans-serif;
 }
 
 @media (min-width: 768px) {
-    .hero-title {
-        font-size: 60px;
-    }
+  .hero-title {
+    font-size: 60px;
+  }
 }
 
+/* Highlight */
 .text-primary {
-    color: var(--primary);
-    font-family: "Geist", sans-serif;
+  color: var(--primary);
 }
 
 /* Description */
 .hero-description {
-    font-size: 20px;
-    color: var(--muted-foreground);
-    margin-bottom: 32px;
-    line-height: 1.6;
-    font-family: "Geist", sans-serif;
+  font-size: 20px;
+  color: var(--muted-foreground);
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-family: "Geist", sans-serif;
 }
 
 /* Buttons */
 .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 32px;
-     font-family: "Geist", sans-serif;
-
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 640px) {
-    .hero-buttons {
-        flex-direction: row;
-    }
+  .hero-buttons {
+    flex-direction: row;
+  }
 }
 
-/* Buttons */
+/* Buttons style */
 .btn-primary {
-    background: var(--primary);
-    color: var(--primary-foreground);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-family: "Geist", sans-serif;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Geist", sans-serif;
 }
 
 .btn-primary:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--foreground);
-    border: 1px solid var(--border);
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-family: "Geist", sans-serif;
+  background: transparent;
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Geist", sans-serif;
 }
 
 .btn-outline:hover {
-    background: var(--accent);
-}
-
-@media (min-width: 640px) {
-
-    .btn-primary,
-    .btn-outline {
-        width: auto;
-    }
+  background: var(--accent);
 }
 
 /* Stats */
 .stats {
-    display: flex;
-    gap: 32px;
-    padding-top: 32px;
-    border-top: 1px solid var(--border);
+  display: flex;
+  gap: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-rating {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .star-icon {
-    color: var(--primary);
-    fill: var(--primary);
+  color: var(--primary);
+  fill: var(--primary);
 }
 
 .stat-value {
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--foreground);
-    font-family: "Geist", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--foreground);
 }
 
 .stat-label {
-    font-size: 14px;
-    color: var(--muted-foreground);
-    font-family: "Geist", sans-serif;
+  font-size: 14px;
+  color: var(--muted-foreground);
 }
 
-/* Container */
+/* Image Container */
 .hero-image {
   position: relative;
   height: 384px;
   min-height: 384px;
   border-radius: 16px;
   overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Image (main fix) */
+/* Image */
 .hero-img {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* VERY IMPORTANT */
+  object-fit: cover;
   top: 0;
   left: 0;
 }
 
-/* Overlay gradient (keeps your design system) */
+/* Gradient Overlay */
 .hero-image::after {
   content: "";
   position: absolute;
   inset: 0;
-
   background: linear-gradient(
     to bottom right,
     color-mix(in srgb, var(--primary) 20%, transparent),
@@ -178,47 +169,9 @@
   );
 }
 
-/* Text overlay */
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-/* Text */
-.hero-image-text {
-  color: var(--primary-foreground);
-  font-size: 18px;
-  font-family: "Geist", sans-serif;
-}
-
-@media (min-width: 768px) {
-    .hero-image {
-        height: 100%;
-    }
-}
-
-.hero-image-content {
-    text-align: center;
-}
-
-
-
-.hero-image-text {
-    color: var(--muted-foreground);
-    font-family: "Geist", sans-serif;
-    font-size: 18px;
-}
-
-/* Simple bounce */
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .hero-image {
+    margin-top: 24px;
+  }
 }

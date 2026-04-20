@@ -9,7 +9,6 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
     { href: "/about", label: "About Us" },
-    { href: "/reviews", label: "Reviews" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -19,8 +18,8 @@ export default function Navbar() {
         
         {/* Logo */}
         <a href="/" className="logo">
-          <span className="logo-icon">🥖</span>
-          <span className="logo-text">KD Baker's</span>
+          <span className="logo-icon">🥯</span>
+          <span className="logo-text">My Oven Story</span>
         </a>
 
         {/* Desktop Menu */}

@@ -3,18 +3,18 @@ import "./Testimonials.css";
 
 const testimonials = [
   {
-    name: "Raj Kumar",
-    text: "Best bakery in Dehradun! Their cakes are absolutely delicious and fresh.",
+    name: "Ankit Das",
+    text: "One of the best bakeries in Liluah. The cakes are always fresh and taste amazing.",
     rating: 5,
   },
   {
-    name: "Priya Singh",
-    text: "Amazing quality and taste. The staff is very friendly and helpful.",
+    name: "Sohini Roy",
+    text: "Loved the pastries and quick service. Perfect place for birthday cakes and small celebrations.",
     rating: 5,
   },
   {
-    name: "Amit Patel",
-    text: "Perfect for birthday cakes and special events. Highly recommended!",
+    name: "Rahul Sharma",
+    text: "Good quality at reasonable prices. Their baked items are fresh and worth trying.",
     rating: 4,
   },
 ];
